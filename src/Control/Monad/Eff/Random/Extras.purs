@@ -9,4 +9,4 @@ choice :: forall a e. [a] -> Eff (random :: Random | e) (Maybe a)
 choice [] = return Nothing
 choice xs = do
   n <- random
-  return $ Just $ xs !! Math.floor (length xs * n)
+  return $ xs !! Math.floor (length xs * n)
