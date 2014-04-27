@@ -17,12 +17,6 @@
     "Gruntfile.js",
     "package.json"
   ],
-  "devDependencies": {
-    "purescript-quickcheck": "*"
-  },
   "dependencies": {
-    "purescript-maybe": "*",
-    "purescript-arrays": "*",
-    "purescript-math": "*"
   }
 }
