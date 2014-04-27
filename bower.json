@@ -1,6 +1,5 @@
 {
   "name": "purescript-random",
-  "version": "0.0.0",
   "homepage": "https://github.com/purescript/purescript-random",
   "description": "Random number generation",
   "keywords": [
@@ -16,7 +15,5 @@
     "tmp",
     "Gruntfile.js",
     "package.json"
-  ],
-  "dependencies": {
-  }
+  ]
 }
