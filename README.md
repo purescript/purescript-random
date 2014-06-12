@@ -9,4 +9,4 @@
 
 ### Values
 
-    random :: forall e. Eff (random :: Random | e) Prim.Number
+    random :: forall e. Eff (random :: Random | e) Number
