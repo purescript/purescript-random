@@ -1,7 +1,6 @@
 module Control.Monad.Eff.Random where
 
 import Control.Monad.Eff
-import Math (floor)
 
 foreign import data Random :: !
 
@@ -18,9 +17,10 @@ foreign import random
 -- | `low > high`.
 randomInt :: forall e . Number -> Number -> Eff (random :: Random | e) Number
 randomInt low high = do
-  rand <- random
-  return (floor (rand * (high - low + 1)) + low)
-
+  r <- randomRange low (high+1)
+  return $ floor r
+  where floor x = let ix = 0.|. x in ix - if ix > x then 1 else 0
+           
 -- | Returns a random number between min (inclusive) and max (exclusive).
 randomRange :: forall e . Number -> Number -> Eff (random :: Random | e) Number
 randomRange min max = do
