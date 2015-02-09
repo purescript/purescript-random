@@ -9,7 +9,8 @@ foreign import data Random :: !
 foreign import random
   """
   function random() {
-    return Math.random();
+    var glob = typeof window === 'undefined' ? global : window;
+    return glob['Math'].random();
   }
   """ :: forall e. Eff (random :: Random | e) Number
 
