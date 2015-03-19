@@ -26,9 +26,10 @@ a direct wrapper around JavaScript's `Math.random()`.
 randomInt :: forall e. Number -> Number -> Eff (random :: Random | e) Number
 ```
 
-Takes a range `low` `high` and returns a random integer uniformly
-distributed in the closed interval `[low, high]`. It is unspecified what
-happens if `low > high`.
+Takes a range specified by `low` (the first argument) and `high` (the
+second), and returns a random integer uniformly distributed in the closed
+interval `[low, high]`. It is unspecified what happens if `low > high`,
+or if either of `low` or `high` is not an integer.
 
 For example:
 
@@ -42,7 +43,8 @@ will print a random integer between 1 and 10.
 randomRange :: forall e. Number -> Number -> Eff (random :: Random | e) Number
 ```
 
-Returns a random number between min (inclusive) and max (exclusive).
+Returns a random number between a minimum value (inclusive) and a maximum
+value (exclusive). It is unspecified what happens if `maximum < minimum`.
 
 For example:
 
