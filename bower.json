@@ -11,13 +11,12 @@
     "bower_components",
     "node_modules",
     "output",
-    "tests",
-    "tmp",
     "bower.json",
-    "Gruntfile.js",
+    "gulpfile.js",
     "package.json"
   ],
   "dependencies": {
-    "purescript-math": "~0.1.0"
+    "purescript-eff": "~0.1.0",
+    "purescript-integers": "~0.2.0"
   }
 }
