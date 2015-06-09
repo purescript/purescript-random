@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/purescript/purescript-random.svg?branch=master)](https://travis-ci.org/purescript/purescript-random)
 
-Random number generation.
+Random value generation.
 
 ## Installation
 

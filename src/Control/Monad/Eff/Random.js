@@ -3,6 +3,4 @@
 
 // module Control.Monad.Eff.Random
 
-exports.random = function() {
-  return Math.random();
-};
+exports.random = Math.random;

@@ -1,5 +1,3 @@
-# Module Documentation
-
 ## Module Control.Monad.Eff.Random
 
 #### `RANDOM`
@@ -52,5 +50,13 @@ randomRange 1 2 >>= Console.print
 ```
 will print a random number between 1 and 2.
 
+#### `randomBool`
+
+``` purescript
+randomBool :: forall e. Eff (random :: RANDOM | e) Boolean
+```
+
+Returns a random boolean value with an equal chance of being `true` or
+`false`.
 
 
