@@ -22,24 +22,26 @@ foreign import random :: forall e. Eff (random :: RANDOM | e) Number
 -- |
 -- | For example:
 -- | ``` purescript
--- | randomInt (fromNumber 1) (fromNumber 10) >>= Console.print
+-- | randomInt 1 10 >>= Console.print
 -- | ```
 -- | will print a random integer between 1 and 10.
 randomInt :: forall e. Int -> Int -> Eff (random :: RANDOM | e) Int
 randomInt low high = do
   n <- random
-  pure <<< U.fromJust <<< fromNumber <<< Math.floor $ toNumber ((high - low + one) + low) * n
+  pure <<< U.fromJust <<< fromNumber <<< Math.floor $ toNumber (high - low + one) * n + toNumber low
 
 -- | Returns a random number between a minimum value (inclusive) and a maximum
 -- | value (exclusive). It is unspecified what happens if `maximum < minimum`.
 -- |
 -- | For example:
 -- | ``` purescript
--- | randomRange 1 2 >>= Console.print
+-- | randomRange 1.0 2.0 >>= Console.print
 -- | ```
 -- | will print a random number between 1 and 2.
 randomRange :: forall e. Number -> Number -> Eff (random :: RANDOM | e) Number
-randomRange min max = (((max - min) + min) *) <$> random
+randomRange min max = do
+    n <- random
+    return (n * (max - min) + min)
 
 -- | Returns a random boolean value with an equal chance of being `true` or
 -- | `false`.
