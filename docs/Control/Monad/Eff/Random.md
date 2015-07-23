@@ -31,7 +31,7 @@ or if either of `low` or `high` is not an integer.
 
 For example:
 ``` purescript
-randomInt (fromNumber 1) (fromNumber 10) >>= Console.print
+randomInt 1 10 >>= Console.print
 ```
 will print a random integer between 1 and 10.
 
@@ -46,7 +46,7 @@ value (exclusive). It is unspecified what happens if `maximum < minimum`.
 
 For example:
 ``` purescript
-randomRange 1 2 >>= Console.print
+randomRange 1.0 2.0 >>= Console.print
 ```
 will print a random number between 1 and 2.
 
