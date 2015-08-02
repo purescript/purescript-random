@@ -3,9 +3,7 @@ module Control.Monad.Eff.Random where
 import Prelude
 
 import Control.Monad.Eff (Eff())
-import Data.Int (fromNumber, toNumber)
-
-import qualified Data.Maybe.Unsafe as U
+import Data.Int (fromNumber, toNumber, floor)
 
 -- | The `RANDOM` effect indicates that an Eff action may access or modify the
 -- | JavaScript global random number generator, i.e. `Math.random()`.
@@ -28,7 +26,8 @@ foreign import random :: forall e. Eff (random :: RANDOM | e) Number
 randomInt :: forall e. Int -> Int -> Eff (random :: RANDOM | e) Int
 randomInt low high = do
   n <- random
-  pure <<< U.fromJust <<< fromNumber <<< Math.floor $ toNumber (high - low + one) * n + toNumber low
+  let asNumber = (toNumber high - toNumber low + one) * n + toNumber low
+  return $ floor asNumber
 
 -- | Returns a random number between a minimum value (inclusive) and a maximum
 -- | value (exclusive). It is unspecified what happens if `maximum < minimum`.
