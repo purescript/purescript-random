@@ -3,7 +3,7 @@ module Control.Monad.Eff.Random where
 import Prelude
 
 import Control.Monad.Eff (Eff())
-import Data.Int (fromNumber, toNumber, floor)
+import Data.Int (toNumber, floor)
 
 -- | The `RANDOM` effect indicates that an Eff action may access or modify the
 -- | JavaScript global random number generator, i.e. `Math.random()`.
