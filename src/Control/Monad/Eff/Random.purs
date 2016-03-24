@@ -1,8 +1,9 @@
 module Control.Monad.Eff.Random where
 
-import Prelude ((<), (<$>), (-), (+), (*), return, bind, ($), one)
+import Prelude
 
-import Control.Monad.Eff (Eff())
+import Control.Monad.Eff (Eff)
+
 import Data.Int (toNumber, floor)
 
 -- | The `RANDOM` effect indicates that an Eff action may access or modify the
@@ -27,7 +28,7 @@ randomInt :: forall e. Int -> Int -> Eff (random :: RANDOM | e) Int
 randomInt low high = do
   n <- random
   let asNumber = (toNumber high - toNumber low + one) * n + toNumber low
-  return $ floor asNumber
+  pure $ floor asNumber
 
 -- | Returns a random number between a minimum value (inclusive) and a maximum
 -- | value (exclusive). It is unspecified what happens if `maximum < minimum`.
@@ -40,7 +41,7 @@ randomInt low high = do
 randomRange :: forall e. Number -> Number -> Eff (random :: RANDOM | e) Number
 randomRange min max = do
     n <- random
-    return (n * (max - min) + min)
+    pure (n * (max - min) + min)
 
 -- | Returns a random boolean value with an equal chance of being `true` or
 -- | `false`.

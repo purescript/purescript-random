@@ -12,6 +12,6 @@ Random value generation.
 bower install purescript-random
 ```
 
-## Module documentation
+## Documentation
 
-- [Control.Monad.Eff.Random](docs/Control/Monad/Eff/Random.md)
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-random).
