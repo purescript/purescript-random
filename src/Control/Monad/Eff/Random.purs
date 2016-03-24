@@ -1,6 +1,6 @@
 module Control.Monad.Eff.Random where
 
-import Prelude
+import Prelude ((<), (<$>), (-), (+), (*), return, bind, ($), one)
 
 import Control.Monad.Eff (Eff())
 import Data.Int (toNumber, floor)
