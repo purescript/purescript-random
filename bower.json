@@ -19,6 +19,6 @@
   "dependencies": {
     "purescript-eff": "^1.0.0-rc.1",
     "purescript-integers": "^1.0.0-rc.1",
-    "purescript-math": "^1.0.0-rc.1"
+    "purescript-math": "^1.0.0"
   }
 }
