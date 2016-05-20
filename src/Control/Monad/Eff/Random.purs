@@ -46,4 +46,4 @@ randomRange min max = do
 -- | Returns a random boolean value with an equal chance of being `true` or
 -- | `false`.
 randomBool :: forall e. Eff (random :: RANDOM | e) Boolean
-randomBool = (< 0.5) <$> random
+randomBool = (_ < 0.5) <$> random
