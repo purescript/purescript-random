@@ -17,8 +17,8 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-eff": "^1.0.0",
-    "purescript-integers": "^1.0.0",
+    "purescript-eff": "^2.0.0",
+    "purescript-integers": "^2.0.0",
     "purescript-math": "^2.0.0"
   }
 }
