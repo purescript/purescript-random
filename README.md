@@ -1,8 +1,7 @@
 # purescript-random
 
-[![Latest release](http://img.shields.io/bower/v/purescript-random.svg)](https://github.com/purescript/purescript-random/releases)
-[![Build Status](https://travis-ci.org/purescript/purescript-random.svg?branch=master)](https://travis-ci.org/purescript/purescript-random)
-[![Dependency Status](https://www.versioneye.com/user/projects/55848c6736386100150003e4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55848c6736386100150003e4)
+[![Latest release](http://img.shields.io/github/release/purescript/purescript-random.svg)](https://github.com/purescript/purescript-random/releases)
+[![Build status](https://travis-ci.org/purescript/purescript-random.svg?branch=master)](https://travis-ci.org/purescript/purescript-random)
 
 Random value generation.
 
