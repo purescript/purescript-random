@@ -2,13 +2,13 @@ module Control.Monad.Eff.Random where
 
 import Prelude
 
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (Eff, kind Effect)
 
 import Data.Int (toNumber, floor)
 
 -- | The `RANDOM` effect indicates that an Eff action may access or modify the
 -- | JavaScript global random number generator, i.e. `Math.random()`.
-foreign import data RANDOM :: !
+foreign import data RANDOM :: Effect
 
 -- | Returns a random number between 0 (inclusive) and 1 (exclusive). This is
 -- | a direct wrapper around JavaScript's `Math.random()`.
