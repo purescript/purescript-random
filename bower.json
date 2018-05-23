@@ -1,8 +1,7 @@
 {
   "name": "purescript-random",
   "homepage": "https://github.com/purescript/purescript-random",
-  "description": "Random value generation",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-random.git"
@@ -17,8 +16,8 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-effect": "purescript/purescript-effect#compiler/0.12",
-    "purescript-integers": "purescript/purescript-integers#compiler/0.12",
-    "purescript-math": "purescript/purescript-math#compiler/0.12"
+    "purescript-effect": "^2.0.0",
+    "purescript-integers": "^4.0.0",
+    "purescript-math": "^2.1.1"
   }
 }
