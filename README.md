@@ -1,14 +1,14 @@
 # purescript-random
 
 [![Latest release](http://img.shields.io/github/release/purescript/purescript-random.svg)](https://github.com/purescript/purescript-random/releases)
-[![Build status](https://travis-ci.org/purescript/purescript-random.svg?branch=master)](https://travis-ci.org/purescript/purescript-random)
+[![Build status](https://github.com/purescript/purescript-random/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-random/actions?query=workflow%3ACI+branch%3Amaster)
 
 Random value generation.
 
 ## Installation
 
 ```
-bower install purescript-random
+spago install random
 ```
 
 ## Documentation
