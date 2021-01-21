@@ -5,16 +5,19 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+- Added support for PureScript 0.14 and dropped support for all previous versions
 
 New features:
 
 Bugfixes:
 
 Other improvements:
+- Migrated CI to GitHub Actions and updated installation instructions to use Spago (#25)
+- Added a changelog and pull request template (#26, #27)
 
 ## [v4.0.0](https://github.com/purescript/purescript-random/releases/tag/v4.0.0) - 2018-05-23
 
-Updated for PureScript 0.12
+- Updated for PureScript 0.12
 
 ## [v3.0.0](https://github.com/purescript/purescript-random/releases/tag/v3.0.0) - 2017-03-26
 
@@ -26,17 +29,9 @@ Updated for PureScript 0.12
 
 ## [v1.0.0](https://github.com/purescript/purescript-random/releases/tag/v1.0.0) - 2016-06-01
 
-This release is intended for the PureScript 0.9.1 compiler and newer.
+This release is intended for the PureScript 0.9.1 compiler and newer. **Note**: The v1.0.0 tag is not meant to indicate the library is “finished”, the core libraries are all being bumped to this for the 0.9 compiler release so as to use semver more correctly.
 
-**Note**: The v1.0.0 tag is not meant to indicate the library is “finished”, the core libraries are all being bumped to this for the 0.9 compiler release so as to use semver more correctly.
-
-## [v1.0.0-rc.2](https://github.com/purescript/purescript-random/releases/tag/v1.0.0-rc.2) - 2016-05-20
-
-- Fix error for operator section usage
-
-## [v1.0.0-rc.1](https://github.com/purescript/purescript-random/releases/tag/v1.0.0-rc.1) - 2016-03-24
-
-- Release candidate for the psc 0.8+ core libraries
+- Fixed error for operator section usage
 
 ## [v0.2.3](https://github.com/purescript/purescript-random/releases/tag/v0.2.3) - 2015-11-20
 
@@ -44,7 +39,7 @@ This release is intended for the PureScript 0.9.1 compiler and newer.
 
 ## [v0.2.2](https://github.com/purescript/purescript-random/releases/tag/v0.2.2) - 2015-08-02
 
-- Fix overflows in randomInt #9 (@hdgarrood)
+- Fixed overflows in randomInt (#9, @hdgarrood)
 
 ## [v0.2.1](https://github.com/purescript/purescript-random/releases/tag/v0.2.1) - 2015-07-23
 
@@ -52,15 +47,11 @@ This release is intended for the PureScript 0.9.1 compiler and newer.
 
 ## [v0.2.0](https://github.com/purescript/purescript-random/releases/tag/v0.2.0) - 2015-06-30
 
-This release works with versions 0.7.\* of the PureScript compiler. It will not work with older versions. If you are using an older version, you should require an older, compatible version of this library.
-
-## [v0.2.0-rc.1](https://github.com/purescript/purescript-random/releases/tag/v0.2.0-rc.1) - 2015-06-09
-
-Initial release candidate of the library intended for the 0.7 compiler.
+- This release works with versions 0.7.\* of the PureScript compiler. It will not work with older versions. If you are using an older version, you should require an older, compatible version of this library.
 
 ## [v0.1.3](https://github.com/purescript/purescript-random/releases/tag/v0.1.3) - 2015-03-19
 
-Updated docs
+- Updated docs
 
 ## [v0.1.2](https://github.com/purescript/purescript-random/releases/tag/v0.1.2) - 2015-02-07
 
@@ -68,9 +59,8 @@ Updated docs
 
 ## [v0.1.1](https://github.com/purescript/purescript-random/releases/tag/v0.1.1) - 2014-04-27
 
-
+- Updated ignored files
 
 ## [v0.1.0](https://github.com/purescript/purescript-random/releases/tag/v0.1.0) - 2014-04-27
 
-
-
+- Initial release
