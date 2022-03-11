@@ -1,3 +1,3 @@
 "use strict";
 
-exports.random = Math.random;
+export var random = Math.random;
