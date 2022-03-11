@@ -1,3 +1,3 @@
 "use strict";
 
-export var random = Math.random;
+export const random = Math.random;
