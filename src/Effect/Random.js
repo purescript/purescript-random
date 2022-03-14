@@ -1,3 +1,1 @@
-"use strict";
-
-exports.random = Math.random;
+export const random = Math.random;
