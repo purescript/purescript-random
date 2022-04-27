@@ -16,8 +16,8 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-effect": "master",
-    "purescript-integers": "master",
+    "purescript-effect": "^4.0.0",
+    "purescript-integers": "^6.0.0",
     "purescript-math": "master"
   }
 }
