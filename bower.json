@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "purescript-effect": "^4.0.0",
-    "purescript-integers": "^6.0.0",
-    "purescript-math": "master"
+    "purescript-integers": "^6.0.0"
   }
 }
