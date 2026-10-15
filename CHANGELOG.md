@@ -5,11 +5,13 @@ Notable changes to this project are documented in this file. The format is based
 ## [v6.0.1](https://github.com/purescript/purescript-random/releases/tag/v6.0.1)
 
 Other improvements:
+
 - Migrate from Bower/Pulp to Spago and update CI, linting, and formatting.
 
 ## [v6.0.0](https://github.com/purescript/purescript-random/releases/tag/v6.0.0) - 2022-04-27
 
 Breaking changes:
+
 - Migrate FFI to ES modules (#29 by @JordanMartinez)
 
 New features:
@@ -21,6 +23,7 @@ Other improvements:
 ## [v5.0.0](https://github.com/purescript/purescript-random/releases/tag/v5.0.0) - 2021-02-26
 
 Breaking changes:
+
 - Added support for PureScript 0.14 and dropped support for all previous versions
 
 New features:
@@ -28,6 +31,7 @@ New features:
 Bugfixes:
 
 Other improvements:
+
 - Migrated CI to GitHub Actions and updated installation instructions to use Spago (#25)
 - Added a changelog and pull request template (#26, #27)
 

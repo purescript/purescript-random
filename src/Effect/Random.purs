@@ -2,9 +2,8 @@ module Effect.Random where
 
 import Prelude
 
+import Data.Int (floor, toNumber)
 import Effect (Effect)
-
-import Data.Int (toNumber, floor)
 
 -- | Returns a random number between 0 (inclusive) and 1 (exclusive). This is
 -- | a direct wrapper around JavaScript's `Math.random()`.
@@ -36,8 +35,8 @@ randomInt low high = do
 -- | will print a random number between 1 and 2.
 randomRange :: Number -> Number -> Effect Number
 randomRange min max = do
-    n <- random
-    pure (n * (max - min) + min)
+  n <- random
+  pure (n * (max - min) + min)
 
 -- | Returns a random boolean value with an equal chance of being `true` or
 -- | `false`.
